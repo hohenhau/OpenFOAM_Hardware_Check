@@ -46,7 +46,7 @@ def estimate_bottleneck_cpu_l3_cache(num_cpu_cores, num_cores, cpu_l3_cache_capa
 
 def estimate_bottleneck_ram_capacity(num_cells, actual_ram_capacity_gb):
     # Approximate requirements are 1.5 to 4.0 GB of RAM per million cells
-    min_gb_ram_per_million_cells = 2
+    min_gb_ram_per_million_cells = 2.5
     required_ram_capacity_gb = (num_cells / 1_000_000) * min_gb_ram_per_million_cells
     return checked_requirements('RAM Capacity (GB)', actual_ram_capacity_gb, required_ram_capacity_gb)
 
