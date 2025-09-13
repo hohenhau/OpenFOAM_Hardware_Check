@@ -11,7 +11,7 @@ RAM_SPEED_MTS = 2700                    # RAM speed in mega transfers per second
 NUM_CPU_CORES = 20                      # Number of CPU cores
 CPU_SPEED_GHZ = 2.0                     # CPU clock-speed in gigahertz
 CPU_L3_CACHE_CAPACITY_MB = 64           # Size of the CPU L3 cache in megabytes
-GPU_VRAM_GB = 0
+GPU_VRAM_GB = 0                         # Virtual memory of the graphics card in gigabytes
 
 
 # ----- Define Functions -------------------------------------------------------------------------------------------- #
