@@ -53,8 +53,8 @@ def estimate_bottleneck_ram_capacity(num_cells, actual_ram_capacity_gb):
 def estimate_bottleneck_ram_channels(num_cores, num_ram_channels):
     # Approximate requirements are 2-4 cores per channel
     max_cores_per_ram_channel = 4
-    cores_per_channel = num_cores / num_ram_channels
-    return checked_requirements('RAM Channels', max_cores_per_ram_channel, cores_per_channel)
+    required_channels = num_cores / max_cores_per_ram_channel
+    return checked_requirements('RAM Channels', num_ram_channels, required_channels)
 
 
 def estimate_bottleneck_ram_bandwidth(num_cpu_cores, ram_speed_mts, num_ram_channels):
