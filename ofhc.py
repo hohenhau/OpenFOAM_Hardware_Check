@@ -104,6 +104,8 @@ def checked_requirements(title, numerator, denominator):
     return ratio, ratio_fmt, title, actual_fmt, target_fmt, mark
 
 
+# ----- Define Main Function ---------------------------------------------------------------------------------------- #
+
 def estimate_cfd_requirements(
         num_cells,
         ram_capacity_gb,
@@ -132,7 +134,7 @@ def estimate_cfd_requirements(
 # ----- Define Program Execution ------------------------------------------------------------------------------------ #
 
 if __name__ == '__main__':
-    print('Checking the various possible bottlenecks')
+    print(f'Checking the various possible hardware bottlenecks for a simulation with {NUM_CELLS:,} cells')
 
     estimate_cfd_requirements(
         num_cells=NUM_CELLS,
